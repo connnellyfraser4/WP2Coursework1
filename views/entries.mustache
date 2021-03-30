@@ -1,0 +1,25 @@
+<head>
+{{>header}}
+</head>
+<body>
+ <h1>{{title}}</h1>
+ {{#entries}}
+ <div>
+ Name: {{name}}
+ </div>
+ <div>
+ Activity: {{activity}}
+ </div>
+ <div>
+ Duration: {{duration}}
+ </div>
+ <div>
+ Written by {{name}} , on {{published}}
+ </div>
+ <hr>
+ {{/entries}}
+ {{^entries}}
+ No entries yet.
+ {{/entries}} 
+</body>
+</html>
